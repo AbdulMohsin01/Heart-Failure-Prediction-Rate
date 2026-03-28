@@ -1,73 +1,42 @@
-# Heart-Failure-Prediction-Rate
-📊 Dataset
-The dataset contains clinical records of patients, including attributes such as:
+# Heart Failure Prediction
 
-Age
+Predicting mortality risk in heart failure patients using machine learning.
 
-Anaemia
+## Dataset
+- 299 patient records with 12 clinical features
+- Target: DEATH_EVENT (survived or died)
+- Source: Kaggle Heart Failure Clinical Records
 
-High blood pressure
+## Models Used
+- Logistic Regression
+- Random Forest  
+- SVM
+- XGBoost
+- kNN
 
-Creatinine phosphokinase
+## Results
 
-Diabetes
+| Model | Accuracy | ROC-AUC |
+|-------|----------|---------|
+| Random Forest | 85% | 0.89 |
+| XGBoost | 83% | 0.87 |
+| Logistic Regression | 80% | 0.84 |
 
-Ejection fraction
+## Key Findings
+- Ejection fraction, age, and serum creatinine were top risk factors
+- Random Forest performed best among all models tested
 
-Platelets
+## Technologies
+Python, Pandas, Scikit-learn, XGBoost, Matplotlib, Seaborn
 
-Serum creatinine
+## How to Run
 
-Serum sodium
+```bash
+git clone https://github.com/AbdulMohsin01/Heart-Failure-Prediction-Rate.git
+cd Heart-Failure-Prediction-Rate
+pip install -r requirements.txt
+jupyter notebook Heart_Failure_Prediction.ipynb
+Connect
+GitHub: AbdulMohsin01
 
-Sex
-
-Smoking
-
-Time (follow-up period)
-
-Death event (target variable)
-
-Source: Kaggle Heart Failure Clinical Records Dataset
-
-🔍 Problem Statement
-Predict whether a patient is at risk of heart failure based on historical clinical data.
-
-🧠 Models Used
-Logistic Regression
-
-Random Forest Classifier
-
-Support Vector Machine (SVM)
-
-XGBoost
-
-k-Nearest Neighbors (kNN)
-
-Performance was evaluated using metrics like:
-
-Accuracy
-
-Precision
-
-Recall
-
-F1 Score
-
-ROC-AUC
-
-🛠️ Tools & Technologies
-Python
-
-Jupyter Notebook
-
-Pandas, NumPy
-
-Scikit-learn
-
-Matplotlib, Seaborn
-
-XGBoost
-
-📈 Results
-The notebook compares the performance of several models, identifying the best-performing one for heart failure prediction. Feature importance analysis is also included.
+LinkedIn: abdulmohsin01
